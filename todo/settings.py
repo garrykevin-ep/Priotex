@@ -106,13 +106,21 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
+
+DATE_FORMAT = "d-m-Y"
+
+DATE_INPUT_FORMATS = (
+    '%d-%m-%Y',     # '21-03-2014'
+)
 
 USE_TZ = True
+
+
 
 
 # Static files (CSS, JavaScript, Images)
