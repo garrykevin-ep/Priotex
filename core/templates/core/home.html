@@ -1,0 +1,112 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>priotex</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static "core/css/style.css" %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static "core/css/bootstrap-grid.css" %}">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		
+		<div id="day" class="col">	
+			
+			<div class="tab">	
+				Today 
+			</div> 
+			
+			<div class="list-container">
+				<div class="list-box">
+					<ul>
+						<li class="card">
+						<div class="tick-box">
+							<input type="checkbox" name="check">
+						</div>
+						<div>hi</div>
+						</li>
+					</ul>
+					<a class="shadow pull-right hide"> Options </a>
+					<div class="option">
+						<form>
+							<input type="text">
+							<input class="add-button" type="submit" value="Add">
+						</form>
+            			<!-- 
+						<div class="more-option">	
+							<a href="#"  class="no-link shadow" >Clear Done</a>
+							|
+            				<a href="#" class="no-link shadow" >Clear All</a>
+            				|
+            				<a href="#" class="no-link shadow"> 
+            				Hide</a>
+						</div>
+            				-->
+						<!-- more option end -->	
+					</div>
+				</div>
+				<!-- list-box end -->	
+			</div>
+				<!-- list-container end -->	
+		</div>
+			<!-- day end -->	
+
+
+		<div id="week" class="col">			
+			<div class="tab">	
+			Week
+			</div> 
+			
+			<div class="list-container">
+				<div class="list-box">
+					<ul>
+						<li class="card">
+						<div class="tick-box">
+							<input type="checkbox" name="check">
+						<label ></label>
+						</div>
+						<div>hi</div>
+						</li>
+					</ul>
+				</div>
+				<!-- list-box end -->	
+			</div>
+				<!-- list-container end -->	
+		
+		</div>
+		<!-- week end -->
+
+		<div id="month" class="col">			
+			<div class="tab">	
+				Month 
+			</div> 
+
+			<div class="list-container">
+				<div class="list-box">
+					<ul>
+						<li class="card">
+						<div class="tick-box">
+							<input type="checkbox" name="check">
+						</div>
+						<div>hi</div>
+						</li>
+					</ul>
+				</div>
+				<!-- list-box end -->	
+			</div>
+				<!-- list-container end -->	
+
+		</div>
+		<!-- month end -->
+
+	</div>
+	<!-- row end -->
+</div>
+<!-- container end -->
+
+</body>
+</html>
