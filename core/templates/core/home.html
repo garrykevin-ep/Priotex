@@ -27,7 +27,7 @@
 					<ul>
 						<li class="card">
 						<div class="tick-box">
-							<input type="checkbox" name="check">
+							<input onclick="markDone(this,{'type' : 'today'})" type="checkbox" name="check">
 						</div>
 						<div class="list-text">hi</div>
 
@@ -41,7 +41,7 @@
 					
 					<a class="shadow pull-right hide"> Options </a>
 					<div class="option">
-						<form>
+						<form action="#">
 							<input type="text">
 							<input onclick="addList(this,{'type':'today'})" id="dayAdd" class="add-button" type="submit" value="Add">
 						</form>
@@ -75,7 +75,7 @@
 					<ul>
 						<li class="card">
 						<div class="tick-box">
-							<input type="checkbox" name="check">
+							<input onclick="markDone(this,{'type' : 'week'})" type="checkbox" name="check">
 						
 						</div>
 						<div class="list-text">hi</div>
@@ -89,8 +89,9 @@
 					</ul>
 					<a class="shadow pull-right hide"> Options </a>
 					<div class="option">
-						<form>
-							<input type="text">
+						<form action="#">
+							<input 
+							type="text">
 							<input id="weekAdd" 
 							onclick="addList(this,{'type':'week'})"
 							class="add-button" type="submit" value="Add">
@@ -125,7 +126,7 @@
 					<ul>
 						<li class="card">
 						<div class="tick-box">
-							<input type="checkbox" name="check">
+							<input onclick="markDone(this,{'type' : 'month'})" type="checkbox" name="check">
 						
 						</div>
 						<div class="list-text">hi</div>
@@ -140,7 +141,7 @@
 					</ul>
 					<a class="shadow pull-right hide"> Options </a>
 					<div class="option">
-						<form>
+						<form action="#">
 							<input type="text">
 							<input id="monthAdd"
 							onclick="addList(this,{'type':'month'})" class="add-button" type="submit" value="Add">
