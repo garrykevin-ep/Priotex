@@ -8,6 +8,8 @@
 
 	<link rel="stylesheet" type="text/css" href="{% static "core/css/bootstrap-grid.css" %}">
 
+	<script type="text/javascript" src=" {% static "core/js/jquery.js" %} "></script>
+
 </head>
 <body>
 
@@ -27,14 +29,21 @@
 						<div class="tick-box">
 							<input type="checkbox" name="check">
 						</div>
-						<div>hi</div>
+						<div class="list-text">hi</div>
+
+						<div class="pull-right">
+						<a class="no-link trash" onclick="deleteList(this,{'type' : 'today'});">
+							Delete
+						</a>
+							</div>
 						</li>
 					</ul>
+					
 					<a class="shadow pull-right hide"> Options </a>
 					<div class="option">
 						<form>
 							<input type="text">
-							<input class="add-button" type="submit" value="Add">
+							<input onclick="addList(this,{'type':'today'})" id="dayAdd" class="add-button" type="submit" value="Add">
 						</form>
             			<!-- 
 						<div class="more-option">	
@@ -46,8 +55,8 @@
             				Hide</a>
 						</div>
             				-->
-						<!-- more option end -->	
 					</div>
+						<!-- more option end -->	
 				</div>
 				<!-- list-box end -->	
 			</div>
@@ -67,11 +76,37 @@
 						<li class="card">
 						<div class="tick-box">
 							<input type="checkbox" name="check">
-						<label ></label>
+						
 						</div>
-						<div>hi</div>
+						<div class="list-text">hi</div>
+						<div class="pull-right">
+							<a href="#" onclick="deleteList(this,{'type': 'week'})" class="no-link trash" >
+								Delete
+							</a>
+							</div>
+
 						</li>
 					</ul>
+					<a class="shadow pull-right hide"> Options </a>
+					<div class="option">
+						<form>
+							<input type="text">
+							<input id="weekAdd" 
+							onclick="addList(this,{'type':'week'})"
+							class="add-button" type="submit" value="Add">
+						</form>
+            			<!-- 
+						<div class="more-option">	
+							<a href="#"  class="no-link shadow" >Clear Done</a>
+							|
+            				<a href="#" class="no-link shadow" >Clear All</a>
+            				|
+            				<a href="#" class="no-link shadow"> 
+            				Hide</a>
+						</div>
+            				-->
+					</div>
+						<!-- more option end -->	
 				</div>
 				<!-- list-box end -->	
 			</div>
@@ -91,10 +126,37 @@
 						<li class="card">
 						<div class="tick-box">
 							<input type="checkbox" name="check">
+						
 						</div>
-						<div>hi</div>
+						<div class="list-text">hi</div>
+						<div class="pull-right">
+							<a href="#" onclick="deleteList(this,{'type': 'month'})" class="no-link trash" >
+								Delete
+							</a>
+							</div>
 						</li>
+
+
 					</ul>
+					<a class="shadow pull-right hide"> Options </a>
+					<div class="option">
+						<form>
+							<input type="text">
+							<input id="monthAdd"
+							onclick="addList(this,{'type':'month'})" class="add-button" type="submit" value="Add">
+						</form>
+            			<!--
+						<div class="more-option">	
+							<a href="#"  class="no-link shadow" >Clear Done</a>
+							|
+            				<a href="#" class="no-link shadow" >Clear All</a>
+            				|
+            				<a href="#" class="no-link shadow"> 
+            				Hide</a>
+						</div>
+            				-->
+					</div>
+						<!-- more option end -->	
 				</div>
 				<!-- list-box end -->	
 			</div>
@@ -107,6 +169,9 @@
 	<!-- row end -->
 </div>
 <!-- container end -->
+
+	<script type="text/javascript" src=" {% static "core/js/index.js" %} "></script>
+
 
 </body>
 </html>

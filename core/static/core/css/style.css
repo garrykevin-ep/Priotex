@@ -45,7 +45,7 @@ ul li {
     list-style-type: none;
 }
 
-
+glyphicon glyphicon-trash
 .tick-box label {
     cursor: pointer;
     position: absolute;
@@ -90,6 +90,7 @@ input[type="text"] {
 .no-link {
     font-size: 1rem;
     text-decoration: none;
+    color : #FFF;
 }
 
 form{
@@ -98,4 +99,8 @@ form{
 
 .more-option{
 	margin-left : 70px;
+}
+
+.list-text{
+	flex-grow : 1;
 }
